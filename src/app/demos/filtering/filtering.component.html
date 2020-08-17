@@ -1,0 +1,21 @@
+<div class="filtering-page">
+    <h2 class="page-title">America's Most Wanted</h2>
+    <div class="filtering-container">
+        <span>Filter the below list: </span>
+        <input class="filtering-input" (keyup)="filterUsers($event)" />
+    </div>
+    <div class="users-container">
+        <div class="user-container" *ngFor="let user of filteredUsers; index as i" (click)="deleteUser(i)">
+            <div class="id-container">
+                <p class="name">{{ formatEmployeeId(user.id) }} - {{ printName(user) }}</p>
+                <img src="../../../assets/user-100.jpg">
+            </div>
+            <div class="address-container">
+                <p class="address-label">Last Known Address</p>
+                <p>{{ user.address.street.concat(' ' + user.address.suite) }}</p>
+                <p>{{ user.address.city }}</p>
+                <p>{{ user.address.zipcode }}</p>
+            </div>
+        </div>
+    </div>
+</div>

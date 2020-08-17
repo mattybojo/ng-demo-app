@@ -1,0 +1,78 @@
+.filtering-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filtering-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filtering-container > * {
+    margin-right: 5px;
+    align-self: center;
+}
+
+.filtering-input {
+    width: 200px;
+    align-self: center;
+}
+
+.users-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.user-container {
+    border: 1px solid #b5b5b5;
+    margin: 5px;
+    display: flex;
+    width: 45%;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-container:hover {
+    background-color: #a7a7a7;
+}
+
+.id-container {
+    display: inline-block;
+    margin: 5px;
+    width: 350px;
+}
+
+.name {
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.address-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.address-container > p:first-child {
+    margin-bottom: 7px;
+}
+
+.address-container > p:not(:first-child) {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.address-label {
+    text-decoration: underline;
+}
