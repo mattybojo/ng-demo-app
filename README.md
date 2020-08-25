@@ -10,4 +10,5 @@ To start this project, you will need to do the following steps.  From the base p
 
 ## Notes
 
+- I have provided a .npmrc file that should help with any proxy issues you may have while using npm.  If you are not on the VPN, you may need to delete or rename the .npmrc file in the project's base directory to resolve any timeout issues.
 - This project uses [JSON Placeholder](https://jsonplaceholder.typicode.com) data for its components.  They have lots of different sample datasets you can use for your own projects.
