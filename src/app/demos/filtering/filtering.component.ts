@@ -57,4 +57,22 @@ export class FilteringComponent implements OnInit {
       this.users.splice(id, 1);
     });
   }
+
+  /**
+   * Remove a user from the list based on the key provided.
+   * @param key Determines which user to remove - 0 for first, 1 for last, -1 for random
+   */
+  removeUser(key: number): void {
+    let lastIndex: number = this.users.length - 1;
+    switch (key) {
+      case 0: this.users.splice(0, 1);
+        break;
+      case 1: this.users.splice(lastIndex, 1);
+        break;
+      case -1:
+        let randomIndex: number = Math.round(Math.random() * lastIndex);
+        this.users.splice(randomIndex, 1);
+        break;
+    }
+  }
 }
